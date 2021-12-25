@@ -3,14 +3,16 @@
     "url" : "https://github.com/brave-pi/boisly_config/",
     "license": "MIT",
     "tags": ["json", "app", "config"],
-    "description": "Automatically expose haxe.config.json as a singleton in your haxe apps.",
+    "description": "Automatically expose haxe.config.json as a singleton in your haxe apps. (supports YAML and XML)",
     "version": "1.1.0",
     "classPath": "src/",
-    "releasenote": "Initial release, everything is working correctly.",
+    "releasenote": "YAML and XML support.",
     "contributors": ["piboistudios"],
     "dependencies": {
       "tink_macro": "",
-      "tink_json": ""
+      "tink_json": "",
+      "tink_xml": "",
+      "yaml": ""
     },
     "main": "Test"
   }
