@@ -1,0 +1,5 @@
+--library tink_json
+--library tink_macro
+-cp src
+-D analyzer-optimize
+

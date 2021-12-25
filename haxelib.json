@@ -1,0 +1,16 @@
+{
+    "name": "boisly_config",
+    "url" : "https://github.com/brave-pi/boisly/",
+    "license": "MIT",
+    "tags": ["json", "app", "config"],
+    "description": "Automatically expose haxe.config.json as a singleton in your haxe apps.",
+    "version": "1.0.0",
+    "classPath": "src/",
+    "releasenote": "Initial release, everything is working correctly.",
+    "contributors": ["piboistudios"],
+    "dependencies": {
+      "tink_macro": "",
+      "tink_json": ""
+    },
+    "main": "Test"
+  }

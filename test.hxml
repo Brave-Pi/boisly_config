@@ -1,0 +1,8 @@
+dev.hxml
+extraParams.hxml
+--library hxnodejs
+--library boisly_config
+-D boisly.appSettings.configFile=whatever.config.json
+-cp src
+--main Test
+--js bin/node/test.js
