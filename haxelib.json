@@ -4,7 +4,7 @@
     "license": "MIT",
     "tags": ["json", "app", "config"],
     "description": "Automatically expose haxe.config.json as a singleton in your haxe apps.",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "classPath": "src/",
     "releasenote": "Initial release, everything is working correctly.",
     "contributors": ["piboistudios"],

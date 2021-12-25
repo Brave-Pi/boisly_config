@@ -1,5 +1,8 @@
 --library tink_json
 --library tink_macro
+--library compiletime
+--library yaml
+--library tink_xml
 -cp src
 -D analyzer-optimize
 

@@ -1,8 +1,9 @@
 dev.hxml
 extraParams.hxml
---library hxnodejs
+# --library hxnodejs
 --library boisly_config
+--library hxjava
 -D boisly.appSettings.configFile=whatever.config.json
 -cp src
 --main Test
---js bin/node/test.js
+--jvm bin/jvm/test.jar

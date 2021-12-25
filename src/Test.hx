@@ -4,12 +4,12 @@ import haxe.io.Bytes;
 import boisly.AppSettings;
 @:config 
 class Configly {
-    var boisly:{
+    public var boisly:{
         is:Dynamic<Bool>,
         createdBy:String,
         utility:Int,
         niftToGriftRatio:Float,
-        binaryBlurb:haxe.io.Bytes
+        binaryBlurb:Bytes
     };
 }
 class Test {
