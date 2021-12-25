@@ -1,6 +1,6 @@
 {
     "name": "boisly_config",
-    "url" : "https://github.com/brave-pi/boisly/",
+    "url" : "https://github.com/brave-pi/boisly_config/",
     "license": "MIT",
     "tags": ["json", "app", "config"],
     "description": "Automatically expose haxe.config.json as a singleton in your haxe apps.",
