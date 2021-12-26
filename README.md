@@ -40,7 +40,7 @@ src/Test.hx:18: {
 
 Use the compiler flag `-D boisly.appSettings.configFile=<your config file path>` to set the config file name/path to whatever you desire.
 
-Currently, XML, JSON and YAML files are supported through [tink_xml](https://github.com/haxetink/tink_xml), [tink_json](https://github.com/haxetink/tink_json) and [yaml](https://github.com/mikestead/hx-yaml) respectively (this also unfortunately means that, if you want configs to be compatible with all three, they must be compatible wtih `tink_xml`, since it parses the fewest set of possible types).
+Currently, XML, JSON and YAML files are supported through [tink_xml](https://github.com/haxetink/tink_xml), [tink_json](https://github.com/haxetink/tink_json) and [yaml](https://github.com/mikestead/hx-yaml) respectively (this also unfortunately means that, if you want configs to be compatible with all three, they must be compatible wtih `tink_xml`, since it parses the smallest set of possible types).
 
 ## ~~Caveats~~
 
