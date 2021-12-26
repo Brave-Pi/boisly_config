@@ -81,9 +81,12 @@ class AppSettings {
 			case TType(_.get() => t, params) if (t.meta.has(":config")):
 				State.configType = type.toComplex();
 			case TInst(_.get() => t, params) if (t.meta.has(":config")):
+                var superCl = t.superClass.t.get();
+                var superFields = if(superCl != null) @:privateAccess superCl.fields.get().map(Sisyphus.toField) else [];
+                
 				final ct = type.toComplex();
 				final setup = EBlock([
-					for (f in fields) {
+					for (f in fields.concat(superFields)) {
 						var fName = f.name;
 						macro @:pos(f.pos) ret.$fName = obj.$fName;
 					}
