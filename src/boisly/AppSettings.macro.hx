@@ -81,7 +81,7 @@ class AppSettings {
 			case TType(_.get() => t, params) if (t.meta.has(":config")):
 				State.configType = type.toComplex();
 			case TInst(_.get() => t, params) if (t.meta.has(":config")):
-                var superCl = t.superClass.t.get();
+                var superCl = if(t.superClass != null) t.superClass.t.get() else null;
                 var superFields = if(superCl != null) @:privateAccess superCl.fields.get().map(Sisyphus.toField) else [];
                 
 				final ct = type.toComplex();
