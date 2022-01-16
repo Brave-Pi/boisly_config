@@ -54,7 +54,7 @@ class AppSettings {
 						return tink.core.Outcome.OutcomeTools.sure(structure.read((sys.io.File.getContent(file))));
 					}
 				}
-			case 'yaml':
+			case 'yaml'|'yml':
 				macro class {
 					static var _config:tink.core.Lazy<$cfgType> = boisly.AppSettings.fromFile.bind($v{configFile});
 					public static var config(get, never):$cfgType;
@@ -81,8 +81,11 @@ class AppSettings {
 			case TType(_.get() => t, params) if (t.meta.has(":config")):
 				State.configType = type.toComplex();
 			case TInst(_.get() => t, params) if (t.meta.has(":config")):
-                var superCl = if(t.superClass != null) t.superClass.t.get() else null;
-                var superFields = if(superCl != null) @:privateAccess superCl.fields.get().map(Sisyphus.toField) else [];
+        
+        var superFields = [];
+        var cl:haxe.macro.ClassType = t;
+        while((cl = if(cl.superClass != null) cl.superClass.t.get() else null) != null)
+          @:privateAccess superFields = superFields.concat(cl.fields.get().map(Sisyphus.toField));
                 
 				final ct = type.toComplex();
 				final setup = EBlock([

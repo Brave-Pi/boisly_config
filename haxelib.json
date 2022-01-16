@@ -4,9 +4,9 @@
     "license": "MIT",
     "tags": ["json", "app", "config"],
     "description": "Automatically expose haxe.config.json as a singleton in your haxe apps. (supports YAML and XML)",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "classPath": "src/",
-    "releasenote": "YAML and XML support.",
+    "releasenote": "Recursively build config from ancestry",
     "contributors": ["piboistudios"],
     "dependencies": {
       "tink_macro": "",
